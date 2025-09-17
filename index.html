@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Waste Tracker | Zero Hunger</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🍎 Food Waste Tracker</div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tracker">Tracker</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+    <div class="hero">
+      <h1>Together, We Can Reduce Food Waste 🌍</h1>
+      <p>Track your food waste, save money, and help achieve <strong>Zero Hunger (SDG 2)</strong>.</p>
+      <a href="#tracker" class="btn">Start Tracking</a>
+    </div>
+
+    <div class="info">
+      <h2>Why Track Food Waste?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🌱 Environment</h3>
+          <p>Reducing waste lowers greenhouse gases and saves resources.</p>
+        </div>
+        <div class="card">
+          <h3>🍽️ Hunger</h3>
+          <p>Less waste means more food available for those in need.</p>
+        </div>
+        <div class="card">
+          <h3>💰 Save Money</h3>
+          <p>Track what you throw away and spend smarter on food shopping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About This Project</h2>
+    <p>
+      The <strong>Food Waste Tracker</strong> is part of the United Nations 
+      <em>Sustainable Development Goal 2: Zero Hunger</em>.
+    </p>
+    <p>
+      Our mission is to help individuals and families reduce food waste 
+      by making waste visible, trackable, and preventable.
+    </p>
+  </section>
+
+  <!-- TRACKER -->
+  <section id="tracker">
+    <h2>Food Waste Tracker</h2>
+    <p>Log your food waste below and see how much you save over time.</p>
+    <form id="wasteForm">
+      <input type="text" id="item" placeholder="Food item" required />
+      <input type="number" id="quantity" placeholder="Quantity (kg)" required />
+      <select id="category">
+        <option value="Fruits">Fruits</option>
+        <option value="Vegetables">Vegetables</option>
+        <option value="Grains">Grains</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+      </select>
+      <button type="submit">Add Waste</button>
+    </form>
+
+    <h3>Waste Summary</h3>
+    <p id="totalWaste">Total Waste: 0 kg</p>
+    <p id="mostWasted">Most Wasted Item: None</p>
+
+    <canvas id="wasteChart"></canvas>
+
+    <h3>Waste Log</h3>
+    <ul id="wasteList"></ul>
+  </section>
+
+  <!-- TIPS -->
+  <section id="tips">
+    <h2>Smart Tips to Reduce Waste</h2>
+
+    <h3>🛒 Shopping Smart</h3>
+    <ul class="tips-list">
+      <li>Plan meals and write a shopping list to avoid overbuying.</li>
+      <li>Buy “ugly” produce — it tastes the same and prevents farm waste.</li>
+      <li>Don’t shop when hungry; you’ll likely buy extra food.</li>
+    </ul>
+
+    <h3>🥶 Storage Hacks</h3>
+    <ul class="tips-list">
+      <li>Store carrots in water-filled containers in the fridge.</li>
+      <li>Freeze bread slices to keep them fresh longer.</li>
+      <li>Keep apples away from bananas to slow spoilage.</li>
+    </ul>
+
+    <h3>🍳 Cooking Smarter</h3>
+    <ul class="tips-list">
+      <li>Use scraps for soups, smoothies, or stir fry.</li>
+      <li>Batch cook meals to prevent daily waste.</li>
+      <li>Turn leftovers into new meals instead of discarding.</li>
+    </ul>
+
+    <h3>♻️ Composting</h3>
+    <p>Start a small compost bin at home for peels and scraps that can’t be eaten. It reduces landfill waste and helps the soil.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to join our initiative? Fill in the form below:</p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contactStatus"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Food Waste Tracker | Supporting <strong>UN SDG 2: Zero Hunger</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
