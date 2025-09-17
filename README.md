@@ -29,7 +29,7 @@ The website helps users:
 
 ## 🚀 Deployment
 The project is deployed live here:  
-👉 [Live Website Link](PASTE_YOUR_DEPLOYMENT_URL_HERE)
+👉 [Live Website Link]( https://eng-maoga.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Dep/)
 
 ## 🛠️ Tech Stack
 - **HTML5** → semantic structure.  
@@ -41,4 +41,5 @@ The project is deployed live here:
 - Built and deployed a production-ready multipage website.  
 - Practiced planning, coding, and deployment best practices.  
 - Applied responsive, interactive front-end design.  
+
 - Contributed towards awareness on **Zero Hunger (SDG #2)**.  
